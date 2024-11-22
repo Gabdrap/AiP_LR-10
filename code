@@ -25,6 +25,11 @@ int main()
     }
     if (choise == 2)
     {
+        char A;
+        cout << "Введите значение: ";
+        cin >> A;
+        (byte) A;
+        cout << A;
         return 0;
     }
     return 0;
