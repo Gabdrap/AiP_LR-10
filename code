@@ -55,4 +55,28 @@ int main()
             cout << "Это число преобразуется в false: " << value;
         }
     }
+    if (choise == 4)
+    {
+        int minus;
+        cout << "Введите отрицательное число: ";
+        cin >> minus;
+        unsigned int unsign = static_cast<unsigned int>(minus); // Преобразование в беззнаковый тип
+
+        cout << "Отрицательное число: " << minus << endl;
+        cout << "Преобразованное в unsigned: " << unsign << endl;
+
+    }
+    if (choise == 5)
+    {
+        short S;
+        long L;
+        cout << "Введите сначала short, потом long через пробел: ";
+        cin >> S >> L;
+        int result = S + L;
+        cout << "Результат: " << result << endl;
+    }
+    if (choise == 6)
+    {
+
+    }
 }
