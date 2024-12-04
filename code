@@ -21,7 +21,7 @@ int main()
     {
         int code;
         char ch;
-        
+
         cout << "type characters and press Enter: ";
         cin >> ch;
         code = (int)ch;
@@ -34,12 +34,25 @@ int main()
     }
     if (choise == 2)
     {
-        char A;
-        cout << "Введите значение: ";
+        float A;
+        cout << "Введите значение типа float: ";
         cin >> A;
-        (byte) A;
-        cout << A;
-        return 0;
+        int intA = static_cast<int>(A);
+        cout << "Преобразованное значение: " << intA << endl;
+        //Остается только целая часть
     }
-    return 0;
+    if (choise == 3)
+    {
+        int value;
+        cout << "Введите значение: ";
+        cin >> value;
+        if (value)
+        {
+            cout << "Это число преобразуется в true: " << value;
+        }
+        else
+        {
+            cout << "Это число преобразуется в false: " << value;
+        }
+    }
 }
