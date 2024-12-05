@@ -1,5 +1,6 @@
 #include <iostream>
 #include <Windows.h>
+#include <string>
 
 using namespace std;
 
@@ -77,6 +78,36 @@ int main()
     }
     if (choise == 6)
     {
+        string input;
+        cout << "Введите число: ";
+        cin >> input;
 
+        // Преобразование строки в целое число
+        int number = stoi(input);
+
+        // Преобразование в байты
+        unsigned char byteValue = static_cast<unsigned char>(number);
+
+        // Вывод результата
+        cout << "Значение в байтах: " << static_cast<int>(byteValue);
+    }
+    if (choise == 7)
+    {
+        string n1;
+        cout << "Введите число: ";
+        cin >> n1;
+
+        // Преобразование строки в целое число
+        int chis = atoi(n1.c_str());
+
+        // Проверка на диапазон
+        if (chis < 0 || chis > 255) {
+            cout << "Не входит в диапазон [0, 255]" << endl;
+        }
+        else {
+            // Преобразование в unsigned char
+            unsigned char znach = static_cast<unsigned char>(chis);
+            cout << "Преобразованное значение: " << static_cast<int>(znach) << endl;
+        }
     }
 }
